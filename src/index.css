@@ -1,0 +1,45 @@
+    @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Style for the select input (Google Translate widget) */
+.goog-te-combo {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+
+  
+    .goog-te-gadget {
+    font-family: arial;
+    font-size: 11px;
+    color: black;
+    /* white-space: nowrap; */
+   }  
+  
+  
+  .VIpgJd-ZVi9od-l4eHX-hSRGPd{
+     display: none;
+    color: #fff;
+    margin-left: 4px;
+    margin-top: 6px;
+  }
+
+  /* .VIpgJd-ZVi9od-l4eHX-hSRGPd { display: none !important; }
+  .skiptranslate.goog-te-gadget > div > span {
+    display: none !important;
+  } */
+
+  /* Style for the arrow button in the select input */
+  .goog-te-combo-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+  }
+  
+  

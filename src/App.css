@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+body,
+html {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.ff_jost {
+  font-family: "Jost", sans-serif;
+}
+
+.bg-contact {
+  background-image: url('./assets/img/png/Loan.png');
+}
+
+@media (max-width:992px) {
+  .bg-contact {
+    background-image: url('./assets/img/png/Loan.png');
+    background-size: cover;
+    background-position: right;
+  }
+
+  .overflow_hidden {
+    overflow: hidden;
+  }
+
+
+}
+
+.loader {
+  width: 14px;
+  height: 14px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 2px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  margin-top: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.news-slider .slick-slide {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.news-slider .slick-track {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #4f3bef !important;
+  font-size: 10px !important;
+}
+
+.slick-dots li button:before {
+
+  font-size: 6px !important;
+
+}
