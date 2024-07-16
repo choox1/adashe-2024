@@ -21,7 +21,7 @@ const Adse = () => {
         <div className="flex justify-between lg:flex-nowrap flex-wrap  w-full pt-6 md:pt-8 xl:pt-14">
           <div className="flex justify-between flex-col   gap-7  ">
             {AdseData.map((obj, index) => (
-              <div className="max-w-[786px]">
+              <div key={index} className="max-w-[786px]">
                 <p className="lg:pr-4 3xl:pr-0">
                   {" "}
                   <span className="font-bold text-lg 3xl:text-xl text-dark_blue leading-10">
@@ -63,7 +63,7 @@ const Adse = () => {
                 <PieChart />
                 <div className="">
                   {AdseDataPie.map((obj, index) => (
-                    <div>
+                    <div key={index}>
                       <p className="flex items-center gap-3 ">
                         <div
                           className={`w-3 h-3 ${obj.bgclr} mt-2  leading-10 rounded-full`}

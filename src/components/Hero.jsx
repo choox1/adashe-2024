@@ -19,9 +19,9 @@ const Hero = () => {
           {t('project')}
             </p>
             <div className="flex max-[700px]:flex-col gap-3 mt-4 xl:mt-6 3xl:mt-7">
-              <Link to='/buy-token' className="max-[700px]:w-full text-center   items-center justify-center whitespace-nowrap bg-white hover:text-blue text-white border-2 border-blue font-bold py-3 px-8 2xl:px-11 rounded-[36px] relative after:absolute after:bg-common-gradient after:top-0 after:left-0 after:rounded-[36px] w-[200px] overflow-hidden after:hover:-left-full transition-all after:duration-300 ease-in-out after:z-[-1] z-[4] after:w-full after:h-full text-xs md:text-sm 3xl:text-base">
+              {/* <Link to='/buy-token' className="max-[700px]:w-full text-center   items-center justify-center whitespace-nowrap bg-white hover:text-blue text-white border-2 border-blue font-bold py-3 px-8 2xl:px-11 rounded-[36px] relative after:absolute after:bg-common-gradient after:top-0 after:left-0 after:rounded-[36px] w-[200px] overflow-hidden after:hover:-left-full transition-all after:duration-300 ease-in-out after:z-[-1] z-[4] after:w-full after:h-full text-xs md:text-sm 3xl:text-base">
               {t('buy_token')}
-              </Link>
+              </Link> */}
               <Link to='https://adashe.gitbook.io/adashe-gitbook/' target="_blank" 
               rel="noopener noreferrer" className="whitespace-nowrap overflow-hidden text-center hover:after:left-[0%] after:duration-300 group-hover relative after:text-white after:-left-full after:top-0 after:z-10 after:content-['WHITEPAPER'] after:flex after:justify-center after:items-center after:absolute after:bg-common-gradient after:w-full after:h-full  border-[2px] text-xs md:text-sm 3xl:text-base  text-dark_blue3  border-[#4F56EF] font-bold py-3 px-10 sm:px-11 after:rounded-[36px] rounded-[36px]">
                {t('white_paper')}
@@ -42,9 +42,9 @@ const Hero = () => {
               className="rounded-2xl"
               src={youtubeVideoUrl}
               title="Project Adashe"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>

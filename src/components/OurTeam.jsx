@@ -19,7 +19,7 @@ const OurTeam = () => {
           <div className="flex justify-center items-center gap-6 rounded-lg mt-8 flex-wrap">
             <div className="flex flex-wrap xl:justify-normal justify-center gap-[30px] w-full h-full mt-6">
               {OurTeamData.map((obj, index) => (
-                <div className="w-full md:w-[47.5%] lg:w-[23%] 4xl:w-[23%] bg-white shadow-new rounded-xl overflow-hidden group">
+                <div key={index} className="w-full md:w-[47.5%] lg:w-[23%] 4xl:w-[23%] bg-white shadow-new rounded-xl overflow-hidden group">
                   <div className="overflow-hidden ">
                     <img
                       className="w-full rounded-t-xl h-[277px] object-cover duration-300 group-hover:scale-125"

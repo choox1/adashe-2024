@@ -57,41 +57,41 @@ const CountdownTimer = () => {
     return null; // Do not render the component
   }
 
-  return (
-    <div className="flex flex-col md:flex-row justify-center items-center space-x-10 bg-black text-white p-4 text-center">
-      <p className="text-xl font-bold mb-2">{t('count-h1')}:</p>
-      <div className="flex-col">
-        <p className="text-2xl font-bold text-red-700">
-          {timeRemaining.expired
-            ? '00:00:00:00'
-            : `${timeRemaining.days < 10 ? '0' : ''}${timeRemaining.days} : ${
-                timeRemaining.hours < 10 ? '0' : ''
-              }${timeRemaining.hours} : ${timeRemaining.minutes < 10 ? '0' : ''}${
-                timeRemaining.minutes
-              } : ${timeRemaining.seconds < 10 ? '0' : ''}${timeRemaining.seconds}`}
-        </p>
+  // return (
+  //   <div className="flex flex-col md:flex-row justify-center items-center space-x-10 bg-black text-white p-4 text-center">
+  //     <p className="text-xl font-bold mb-2">{t('count-h1')}:</p>
+  //     <div className="flex-col">
+  //       <p className="text-2xl font-bold text-red-700">
+  //         {timeRemaining.expired
+  //           ? '00:00:00:00'
+  //           : `${timeRemaining.days < 10 ? '0' : ''}${timeRemaining.days} : ${
+  //               timeRemaining.hours < 10 ? '0' : ''
+  //             }${timeRemaining.hours} : ${timeRemaining.minutes < 10 ? '0' : ''}${
+  //               timeRemaining.minutes
+  //             } : ${timeRemaining.seconds < 10 ? '0' : ''}${timeRemaining.seconds}`}
+  //       </p>
 
-        <div className="justify-center items-end flex space-x-6 font-semibold">
-          <span className="text-white">{timeRemaining.days > 0 ? t('Days') : t('Day')}</span>
-          <span className="text-white">{t('Hrs')}</span>
-          <span className="text-white">{t('Mins')}</span>
-          <span className="text-white">{t('Secs')}</span>
-        </div>
-      </div>
-      <button
-        className="bg-red-700 text-white px-4 py-4 mt-2 hover:bg-red-800 rounded-lg m font-semibold"
-        onClick={() => navigate('/buy-token')}
-      >
-   {t('buy')}
-      </button>
-      <button
-        className="absolute top-2 right-2 font-bold text-gray-200 text-base"
-        onClick={handleHideComponent}
-      >
-        X
-      </button>
-    </div>
-  );
+  //       <div className="justify-center items-end flex space-x-6 font-semibold">
+  //         <span className="text-white">{timeRemaining.days > 0 ? t('Days') : t('Day')}</span>
+  //         <span className="text-white">{t('Hrs')}</span>
+  //         <span className="text-white">{t('Mins')}</span>
+  //         <span className="text-white">{t('Secs')}</span>
+  //       </div>
+  //     </div>
+  //     <button
+  //       className="bg-red-700 text-white px-4 py-4 mt-2 hover:bg-red-800 rounded-lg m font-semibold"
+  //       onClick={() => navigate('/buy-token')}
+  //     >
+  //  {t('buy')}
+  //     </button>
+  //     <button
+  //       className="absolute top-2 right-2 font-bold text-gray-200 text-base"
+  //       onClick={handleHideComponent}
+  //     >
+  //       X
+  //     </button>
+  //   </div>
+  // );
 };
 
 export default CountdownTimer;

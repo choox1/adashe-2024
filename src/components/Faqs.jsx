@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { FaqData } from "../common/Helper";
+import { useTranslation } from "react-i18next";
 import {
   Accordion,
-  AccordionHeader,
-  AccordionBody,
-} from "@material-tailwind/react";
-import { useTranslation } from "react-i18next";
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./Accordion";
 
 function Icon({ id, open }) {
-  
   return (
     <svg
       className={`${
@@ -46,29 +46,41 @@ const Faqs = () => {
       className="container px-4 md:px-6 xl:px-0 xl:max-w-[1140px] 3xl:max-w-[1580px]  mx-auto md:pb-10 xl:pb-[50px]"
     >
       <h3 className="text-blue text-center font-bold text-[30px] sm:text-4xl lg:text-5xl  3xl:text-6xl mb-10">
-       {t('faq')}
+        {t("faq")}
       </h3>
       <div className="flex flex-wrap justify-center">
-        <div className="max-w-[1100px] sm:px-4">
-          <div className="lg:pb-4 xl:pb-12">
+        <div className="sm:px-4">
+          <div className="lg:pb-4 xl:pb-12 space-y-3">
             {FaqData.map((obj, index) => (
               <Accordion
-                className=" "
-                open={open === index}
-                icon={<Icon id={index} open={open} />}
+                type="single"
+                collapsible
+                className="space-y-3 md:w-[1100px] w-full"
+                key={index}
               >
-                <AccordionHeader
-                  className=" border border-[#dcdcdc] py-[17px] sm:ps-[30px] px-2 text-left sm:pe-[23px] rounded-[10px] text-[13px] sm:text-lg text-light_gray3 font-normal mb-4"
-                  onClick={() => handleOpen(index)}
+                <AccordionItem
+                  value="item-1"
+                  className="border-0 bg-neutral-200 px-6 rounded-xl"
                 >
-                     {t(`FaqData.${obj.heading}`)}
-              
-                </AccordionHeader>
-                <AccordionBody className=" px-4 sm:px-10 text-[#4c4b4b] leading-[32px] text-xs sm:text-base pb-6 pt-0 sm:py-6">
-                  <div dangerouslySetInnerHTML={{ __html: t(`FaqData.${obj.detail}`)}} />
-                  
-                </AccordionBody>
+                  <AccordionTrigger className="text-left">
+                    {t(`FaqData.${obj.heading}`)}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-left">
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: t(`FaqData.${obj.detail}`),
+                      }}
+                    />
+                  </AccordionContent>
+                </AccordionItem>
               </Accordion>
+
+              //   </AccordionHeader>
+              //   <AccordionBody className=" px-4 sm:px-10 text-[#4c4b4b] leading-[32px] text-xs sm:text-base pb-6 pt-0 sm:py-6">
+              //   <div dangerouslySetInnerHTML={{ __html: t(`FaqData.${obj.detail}`)}} />
+
+              //   </AccordionBody>
+              // </Accordion>
             ))}
           </div>
         </div>

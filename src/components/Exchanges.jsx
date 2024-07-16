@@ -26,7 +26,7 @@ const Exchanges = () => {
         </p>
         <div className="flex justify-center items-center gap-6 rounded-lg mt-8 flex-wrap">
       {ExchangeData.slice(0, displayItems).map((obj, index) => (
-        <div className="w-[90%] md:w-[48%] xl:w-[23%]" key={index}>
+        <div key={index} className="w-[90%] md:w-[48%] xl:w-[23%]" key={index}>
           <div className="flex items-center gap-6 bg-[#6a59bf59] rounded-lg p-3 ">
             <img className="w-[80px] 3xl:w-[106px]" src={obj.img} alt={`img${index}`} />
             <div>

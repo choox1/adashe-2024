@@ -62,7 +62,7 @@ const CorePartner = () => {
         
         <Slider {...settings}>
           {CorePartnerData.map((obj, index) => (
-              <div className="flex justify-center items-center px-4 3xl:px-0 py-2">
+              <div key={index} className="flex justify-center items-center px-4 3xl:px-0 py-2">
                   <div className="flex items-center gap-6 bg-[#6a59bf59] rounded-lg p-3 max-w-[452px] w-full">
                     <img className="w-[80px] 3xl:w-[106px]" src={obj.img} alt="img1" />
                     <div>

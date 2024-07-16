@@ -17,7 +17,7 @@ import latestNews2 from "../assets/img/png/latest-news-2.png";
 import latestNews3 from "../assets/img/png/latest-news-3.png";
 import coreimg1 from "../assets/img/svg/coreimg1.svg";
 import coreimg2 from "../assets/img/svg/coreimg2.svg";
-import coreimg3 from "../assets/img/png/coreimg3.png";
+// import coreimg3 from "../assets/img/png/coreimg3.png";
 import coreimg4 from "../assets/img/svg/coreimg4.svg";
 import coreimg5 from "../assets/img/svg/coreimg5.svg";
 // import coreimg6 from "../assets/img/svg/coreimg6.svg";
@@ -27,7 +27,7 @@ import coreimg9 from "../assets/img/svg/coreimg9.png";
 import coreimg12 from "../assets/img/svg/coreimg12.png";
 import coreimg10 from "../assets/img/svg/auby.svg";
 import coreimg11 from "../assets/img/svg/coreimg11.png";
-import lpimg1 from "../assets/img/svg/lpimg1.png";
+import lpimg1 from "../assets/img/svg/coreimg10.png";
 import lpimg2 from "../assets/img/svg/lpimg2.png";
 import exchangeim1 from "../assets/img/png/exchange-img-1.png";
 import exchangeim2 from "../assets/img/png/exchange-img-2.png";
@@ -38,10 +38,10 @@ import Advisor2 from "../assets/img/png/advisor2.png"
 import Advisor3 from "../assets/img/png/advisor3.png"
 import Advisor4 from "../assets/img/png/advisor4.png"
 import Team1 from "../assets/img/png/Othniel-Mbamalu.jpg"
-import Team2 from "../assets/img/png/Gerald-Tautenhahn.png"
-import Team3 from "../assets/img/png/Quivira.jpg" 
-import Team4 from "../assets/img/png/Carl-Tautenhahn.png" 
-import { useTranslation } from 'react-i18next';
+import Team2 from "../assets/img/png/Alexandra-Trofymova.748454fcfe11694d164c.png"
+import Team3 from "../assets/img/png/Gerald-Tautenhahn.png" 
+import Team4 from "../assets/img/png/Quivira.jpg" 
+// import { useTranslation } from 'react-i18next';
 
 export const Analytics = [
   {
@@ -174,21 +174,21 @@ export const OurTeamData = [
     designation:"designation2",
     detail: "detail2",
     img: Team2,
-    link:"https://www.linkedin.com/in/geraldmonroe1/",
+    link:"https://www.linkedin.com/in/alexa-t-b9446324a/",
   },
   {
     name: "name3",
     designation:"designation3",
     detail: "detail3",
     img: Team3,
-    link:"https://www.linkedin.com/in/damilarequivira/",
+    link:"https://www.linkedin.com/in/geraldmonroe1/",
   },
   {
     name: "name4",
     designation:"designation4",
     detail: "detail4",
     img: Team4,
-    link:"https://www.linkedin.com/in/carlhenly/",
+    link:"https://www.linkedin.com/in/damilarequivira/",
   },
 ];
 export const AdvisorData = [
